@@ -55,7 +55,7 @@ const FormToUpdateNewBusiness = (props:{Usef:User | null}) => {
     };
 
     const onClickDelete = async () => {
-        const returnRes = await axios.delete(`http://localhost:3000/api/deleteBusiness/${searchParams}`).then((res) => {
+        const returnRes = await axios.delete(`/api/deleteBusiness/${searchParams}`).then((res) => {
             if (res.status === 200)
             {
                 console.log('res',res);

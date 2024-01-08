@@ -40,7 +40,7 @@ type ItemType = {
       };
 
       const onClickDelete = async (item:ItemType) => {
-        const returnRes = await axios.delete(`http://localhost:3000/api/deleteBusiness/${item.id}`).then((res) => {
+        const returnRes = await axios.delete(`/api/deleteBusiness/${item.id}`).then((res) => {
             if (res.status === 200)
             {
                 console.log('res',res);
